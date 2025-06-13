@@ -28,9 +28,9 @@ const ProgramCards = () => {
         "Scholarship application help",
         "24/7 support during application season"
       ],
-      popular: true,
+      popular: false,
       color: "bg-primary-500",
-      image: "https://lkouniexam.in/wp-content/uploads/2024/07/Haryana-HSTES-B.tech-1st-Counselling-Seat-Allotment-2024.jpg"
+      image: "/res/imgs/programs/hstes.png"
       
     },
     {
@@ -48,7 +48,7 @@ const ProgramCards = () => {
       ],
       popular: false,
       color: "bg-secondary-500",
-      image: "https://bodmaseducation.com/uploads/1746433202_JAC%20Delhi%20Counselling%202025%20%20%20%20Schedule,%20%20Registration,%20%20Eligibility.png"
+      image: "/res/imgs/programs/josaa.png"
     },
     {
       id: 3,
@@ -65,7 +65,7 @@ const ProgramCards = () => {
       ],
       popular: false,
       color: "bg-accent-500",
-      image: "https://www.iquanta.in/blog/wp-content/uploads/2025/02/WhatsApp-Image-2025-05-21-at-5.31.07-PM.jpeg"
+      image: "/res/imgs/programs/jac-delhi.png"
       
     }
   ];
@@ -98,11 +98,11 @@ const ProgramCards = () => {
                 </div>
               )}
               
-              <div className="h-48 overflow-hidden">
+              <div className="h-48  overflow-hidden">
                 <img 
                   src={program.image} 
                   alt={program.title} 
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                  className="w-full h-full object-contain transition-transform duration-500 hover:scale-105"
                 />
               </div>
               
