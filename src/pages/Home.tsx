@@ -5,7 +5,7 @@ import Hero from "../components/home/Hero";
 import Stats from "../components/home/Stats";
 import ProgramCards from "../components/home/ProgramCards";
 import FAQ from "../components/home/FAQ";
-import CTA from "../components/home/CTA";
+// import CTA from "../components/home/CTA";
 import Testimonials from "../components/home/Testimonials";
 import YouTubeSection from "../components/home/YoutubeSection";
 const Home = () => {
@@ -22,7 +22,7 @@ const Home = () => {
         <YouTubeSection />
         <br />
         <FAQ />
-        <CTA />
+        {/* <CTA /> */}
       </main>
       <Footer />
     </div>

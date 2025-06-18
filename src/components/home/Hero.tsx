@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, CheckCircle } from "lucide-react";
+import {  CheckCircle } from "lucide-react";
 import CountUp from "react-countup";
 
 const Hero = () => {
@@ -21,13 +21,13 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
-              <Link
+              {/* <Link
                 to="/signup"
                 className="btn-primary flex items-center justify-center gap-2 text-base"
               >
                 Get Started
                 <ArrowRight size={18} />
-              </Link>
+              </Link> */}
               <Link
                 onClick={() => {
                   document

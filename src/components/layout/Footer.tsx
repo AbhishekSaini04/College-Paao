@@ -2,10 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import {
   Linkedin,
-  GraduationCap,
+
   Mail,
-  Phone,
-  MapPin,
   Instagram,
   Youtube,
 } from "lucide-react";
@@ -18,7 +16,7 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <Link to="/" className="flex items-center gap-2 mb-4">
-              <GraduationCap size={32} className="text-primary-500" />
+              <img className="w-12" src="/res/imgs/collegePaaoLogo.png" alt="College Paao" />
               <span className="text-xl font-bold text-white">College Paao</span>
             </Link>
             <p className="mb-4 text-gray-400 text-sm leading-relaxed">
@@ -90,22 +88,6 @@ const Footer = () => {
                   FAQ
                 </Link>
               </li>
-              <li>
-                <Link
-                  to="/login"
-                  className="text-gray-400 hover:text-primary-500 transition-colors"
-                >
-                  Login
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/signup"
-                  className="text-gray-400 hover:text-primary-500 transition-colors"
-                >
-                  Sign Up
-                </Link>
-              </li>
             </ul>
           </div>
 
@@ -116,28 +98,28 @@ const Footer = () => {
             </h3>
             <ul className="space-y-2">
               <li>
-                <Link
-                  to="/batch/1"
+                <a
+                  href="https://pages.razorpay.com/pl_QhRB8FR9rS1dmi/view"
                   className="text-gray-400 hover:text-primary-500 transition-colors"
                 >
                   HSTES
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  to="/batch/2"
+                <a
+                  href="https://pages.razorpay.com/pl_QiFpO5Pa41R6vf/view"
                   className="text-gray-400 hover:text-primary-500 transition-colors"
                 >
                   JoSaa
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  to="/batch/3"
+                <a
+                  href="https://pages.razorpay.com/pl_QiFzBfZkv3pMYK/view"
                   className="text-gray-400 hover:text-primary-500 transition-colors"
                 >
                   JAC Delhi
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
@@ -148,40 +130,16 @@ const Footer = () => {
               Contact Us
             </h3>
             <ul className="space-y-3">
-              <li className="flex items-start">
-                <MapPin
-                  size={20}
-                  className="text-primary-500 mr-2 mt-1 flex-shrink-0"
-                />
-                <span className="text-gray-400">
-                  Lorem, ipsum dolor.
-                  <br />
-                  Lorem, ipsum.
-                  <br /> Lorem, ipsum dolor.
-                </span>
-              </li>
-              <li className="flex items-center">
-                <Phone
-                  size={20}
-                  className="text-primary-500 mr-2 flex-shrink-0"
-                />
-                <a
-                  href="tel:+11234567890"
-                  className="text-gray-400 hover:text-primary-500 transition-colors"
-                >
-                  +1 12345678
-                </a>
-              </li>
               <li className="flex items-center">
                 <Mail
                   size={20}
                   className="text-primary-500 mr-2 flex-shrink-0"
                 />
                 <a
-                  href="mailto:info@eduguide.com"
+                  href="mailto:collegepaao@gmail.com"
                   className="text-gray-400 hover:text-primary-500 transition-colors"
                 >
-                  temp@mail.com
+                  collegepaao@gmail.com
                 </a>
               </li>
             </ul>
@@ -196,18 +154,35 @@ const Footer = () => {
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a
-                target="_blank"
-                href="https://instagram.com/abhishek.saini04"
+                href="https://merchant.razorpay.com/policy/QgpC4oAe87F95O/terms"
                 className="hover:text-primary-500 transition-colors"
               >
-                With ❤️ by Abhishek Saini
+                Terms and Conditions
               </a>
-              {/* <a href="#" className="hover:text-primary-500 transition-colors">
-                Terms of Service
+              <a
+                href="https://merchant.razorpay.com/policy/QgpC4oAe87F95O/privacy"
+                className="hover:text-primary-500 transition-colors"
+              >
+                Privacy Policy
               </a>
-              <a href="#" className="hover:text-primary-500 transition-colors">
-                Cookie Policy
-              </a> */}
+              <a
+                href="https://merchant.razorpay.com/policy/QgpC4oAe87F95O/refund"
+                className="hover:text-primary-500 transition-colors"
+              >
+                Cancellations and Refunds
+              </a>
+              <a
+                href="https://merchant.razorpay.com/policy/QgpC4oAe87F95O/shipping"
+                className="hover:text-primary-500 transition-colors"
+              >
+                Shipping Policy
+              </a>
+              <a
+                href="https://merchant.razorpay.com/policy/QgpC4oAe87F95O/contact_us"
+                className="hover:text-primary-500 transition-colors"
+              >
+                Contact Us
+              </a>
             </div>
           </div>
         </div>

@@ -1,12 +1,11 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { ArrowRight, Check } from 'lucide-react';
+import { ArrowRight, Check } from "lucide-react";
 
 interface Program {
-  id: number;
+  link: string;
   title: string;
   description: string;
   price: string;
+  extraPrice?: string;
   features: string[];
   popular: boolean;
   color: string;
@@ -16,58 +15,64 @@ interface Program {
 const ProgramCards = () => {
   const programs: Program[] = [
     {
-      id: 1,
+      link: "https://pages.razorpay.com/pl_QhRB8FR9rS1dmi/view",
       title: "HSTES",
-      description: "Complete guidance through the entire college application process",
-      price: "$1,999",
+      description:
+        "Complete guidance through the entire college application process",
+      price: "₹1299/-",
+      extraPrice: "₹1599/-",
+
       features: [
-        "Personalized college selection",
-        "Application strategy",
-        "Essay writing guidance",
-        "Interview preparation",
-        "Scholarship application help",
-        "24/7 support during application season"
+        "Direct Call & 1-on-1 Support Sessions",
+        "Customised Choice Filling Just for You",
+        "Full Support for Certificates & Scholarships",
+        "Best College Recommendation According to Your Rank",
+        "Exclusive Student Support Group on WhatsApp",
+        "College Insider Tips Just for You",
       ],
       popular: false,
       color: "bg-primary-500",
-      image: "/res/imgs/programs/hstes.png"
-      
+      image: "/res/imgs/programs/hstes.png",
     },
     {
-      id: 2,
+      link: "https://pages.razorpay.com/pl_QiFpO5Pa41R6vf/view",
       title: "JoSaa",
-      description: "Expert guidance to craft compelling personal statements and essays",
-      price: "$899",
+      description:
+        "Expert guidance to craft compelling personal statements and essays",
+      price: "₹999/-",
+      extraPrice: "₹1299/-",
       features: [
-        "Personal statement development",
-        "Supplemental essay guidance",
-        "Editing and proofreading",
-        "Narrative strategy",
-        "Multiple revision rounds",
-        "Example essays from successful applicants"
+        "Personalized Choice Filling Support",
+        "One-on-One Counselling Call/Session",
+        "Complete College Prediction",
+        "Document & Certificate Guidance",
+        "Backup College Strategy",
+        "Personal WhatsApp Group",
+        "Detailed Round-by-Round Strategy",
       ],
       popular: false,
       color: "bg-secondary-500",
-      image: "/res/imgs/programs/josaa.png"
+      image: "/res/imgs/programs/josaa.png",
     },
     {
-      id: 3,
+      link: "https://pages.razorpay.com/pl_QiFzBfZkv3pMYK/view",
       title: "JAC Delhi",
-      description: "Comprehensive preparation for college and scholarship interviews",
-      price: "$599",
+      description:
+        "Comprehensive preparation for college and scholarship interviews",
+      price: "₹899/-",
+      extraPrice: "₹1199/-",
       features: [
-        "Mock interview sessions",
-        "Personalized feedback",
-        "Common question preparation",
-        "Body language coaching",
-        "Stress management techniques",
-        "Follow-up strategy"
+        "End-to-End Counselling Assistance",
+        "1-on-1 Call/Chat Support",
+        "Spot Round Special Guidance",
+        "Instant WhatsApp Support Group",
+        "Scholarship & Document Assistance",
+        "College Prediction Support",
       ],
       popular: false,
       color: "bg-accent-500",
-      image: "/res/imgs/programs/jac-delhi.png"
-      
-    }
+      image: "/res/imgs/programs/jac-delhi.png",
+    },
   ];
 
   return (
@@ -78,15 +83,16 @@ const ProgramCards = () => {
             Choose the Perfect Program for You
           </h2>
           <p className="text-lg text-gray-700">
-            We offer specialized packages designed to meet your specific needs in the college 
-            application process. Each program is tailored to help you achieve your goals.
+            We offer specialized packages designed to meet your specific needs
+            in the college application process. Each program is tailored to help
+            you achieve your goals.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {programs.map((program) => (
-            <div 
-              key={program.id}
+            <div
+              key={program.link}
               className="relative rounded-2xl overflow-hidden shadow-lg hover:shadow-xl 
                 transition-all duration-300 hover:-translate-y-2 h-full flex flex-col"
             >
@@ -97,45 +103,63 @@ const ProgramCards = () => {
                   </span>
                 </div>
               )}
-              
+
               <div className="h-48  overflow-hidden">
-                <img 
-                  src={program.image} 
-                  alt={program.title} 
+                <img
+                  src={program.image}
+                  alt={program.title}
                   className="w-full h-full object-contain transition-transform duration-500 hover:scale-105"
                 />
               </div>
-              
+
               <div className="p-6 flex-grow flex flex-col">
-                <div className={`w-12 h-1 ${program.color} mb-4 rounded-full`}></div>
-                <h3 className={`text-xl font-bold mb-2 ${program.color}`}>{program.title}</h3>
+                <div
+                  className={`w-12 h-1 ${program.color} mb-4 rounded-full`}
+                ></div>
+                <h3 className={`text-xl font-bold mb-2 ${program.color}`}>
+                  {program.title}
+                </h3>
                 <p className="text-gray-600 mb-4">{program.description}</p>
-                
+
                 <div className="mb-6 flex-grow">
                   <ul className="space-y-2">
                     {program.features.map((feature, index) => (
                       <li key={index} className="flex items-start">
-                        <Check size={18} className="text-success-500 mr-2 mt-1 flex-shrink-0" />
+                        <Check
+                          size={18}
+                          className="text-success-500 mr-2 mt-1 flex-shrink-0"
+                        />
                         <span className="text-gray-700">{feature}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
-                
+
                 <div className="mt-auto">
                   <div className="flex items-end justify-between mb-4">
-                    <div>
-                      <span className="text-2xl font-bold">{program.price}</span>
+                    <div className="gap-2 flex items-baseline">
+                      <span className="text-2xl font-bold">
+                        {program.price}
+                      </span>
+                      <span
+                        className="text-2xl font-bold"
+                        style={{
+                          textDecoration: "line-through",
+                          color: "#9CA3AF",
+                        }}
+                      >
+                        {program.extraPrice}
+                      </span>
                     </div>
                   </div>
-                  
-                  <Link 
-                    to={`/batch/${program.id}`}
+
+                  <a
+                    href={program.link}
                     className={`w-full flex items-center justify-center gap-2 py-3 px-4 rounded-lg font-medium text-white ${program.color} hover:opacity-90 transition-opacity`}
                   >
                     View Details
                     <ArrowRight size={18} />
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>

@@ -41,7 +41,8 @@ const Navbar = () => {
         {/* Logo */}
         <Link to="" className="flex items-center gap-2" onClick={closeMenu}>
           <img
-            style={{ height: "36px" }}
+        
+            style={{ height: "50px" }}
             src="/res/imgs/collegePaaoLogo.png"
             alt="College Paao"
           />
@@ -79,7 +80,7 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <div className="flex items-center space-x-4">
+          {/* <div className="flex items-center space-x-4">
             <Link
               to="/login"
               className="text-sm font-medium hover:text-primary-500 transition-colors"
@@ -93,7 +94,7 @@ const Navbar = () => {
             >
               Sign up
             </Link>
-          </div>
+          </div> */}
         </nav>
 
         {/* Mobile menu button */}
