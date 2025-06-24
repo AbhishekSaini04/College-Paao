@@ -1,12 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {
-  Linkedin,
-
-  Mail,
-  Instagram,
-  Youtube,
-} from "lucide-react";
+import { Linkedin, Mail, Instagram, Youtube } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -16,7 +10,11 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <Link to="/" className="flex items-center gap-2 mb-4">
-              <img className="w-12" src="/res/imgs/collegePaaoLogo.png" alt="College Paao" />
+              <img
+                className="w-12"
+                src="/res/imgs/collegePaaoLogo.png"
+                alt="College Paao"
+              />
               <span className="text-xl font-bold text-white">College Paao</span>
             </Link>
             <p className="mb-4 text-gray-400 text-sm leading-relaxed">
@@ -99,7 +97,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="https://pages.razorpay.com/pl_QhRB8FR9rS1dmi/view"
+                  href="https://rzp.io/rzp/NkabB9j"
                   className="text-gray-400 hover:text-primary-500 transition-colors"
                 >
                   HSTES
@@ -107,7 +105,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://pages.razorpay.com/pl_QiFpO5Pa41R6vf/view"
+                  href="https://rzp.io/rzp/4k1PO7g"
                   className="text-gray-400 hover:text-primary-500 transition-colors"
                 >
                   JoSaa
@@ -115,7 +113,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://pages.razorpay.com/pl_QiFzBfZkv3pMYK/view"
+                  href="https://rzp.io/rzp/a0noOny"
                   className="text-gray-400 hover:text-primary-500 transition-colors"
                 >
                   JAC Delhi
@@ -152,34 +150,52 @@ const Footer = () => {
               &copy; {new Date().getFullYear()} College Paao. All rights
               reserved.
             </p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
+            <div className="flex justify-around mt-4 md:mt-0  gap-0">
               <a
-                href="https://merchant.razorpay.com/policy/QgpC4oAe87F95O/terms"
-                className="hover:text-primary-500 transition-colors"
+                href="https://sites.google.com/view/college-paao/home?authuser=1"
+                className="hover:text-primary-500  text-xs transition-colors"
               >
-                Terms and Conditions
+                Terms and Services
               </a>
+              |
               <a
-                href="https://merchant.razorpay.com/policy/QgpC4oAe87F95O/privacy"
-                className="hover:text-primary-500 transition-colors"
+                href="https://sites.google.com/view/collegepaao/home?authuser=1"
+                className="hover:text-primary-500  text-xs transition-colors"
               >
                 Privacy Policy
               </a>
+                |
+              <a
+                href="https://sites.google.com/view/college-paao1/home?authuser=1"
+                className="hover:text-primary-500  text-xs transition-colors"
+              >
+                Terms & Conditions
+              </a>
+                |
               <a
                 href="https://merchant.razorpay.com/policy/QgpC4oAe87F95O/refund"
-                className="hover:text-primary-500 transition-colors"
+                className="hover:text-primary-500  text-xs transition-colors"
               >
-                Cancellations and Refunds
+                Cancellation & Refund
               </a>
+                |
+              <a
+                href="https://sites.google.com/view/collegepaaoprivacypolicy/home"
+                className="hover:text-primary-500  text-xs  transition-colors"
+              >
+                Refund Policy
+              </a>
+                |
               <a
                 href="https://merchant.razorpay.com/policy/QgpC4oAe87F95O/shipping"
-                className="hover:text-primary-500 transition-colors"
+                className="hover:text-primary-500 text-xs transition-colors"
               >
                 Shipping Policy
               </a>
+                |
               <a
-                href="https://merchant.razorpay.com/policy/QgpC4oAe87F95O/contact_us"
-                className="hover:text-primary-500 transition-colors"
+                href="https://sites.google.com/view/coolegepaaocontactus/home?authuser=1"
+                className="hover:text-primary-500 text-xs transition-colors"
               >
                 Contact Us
               </a>

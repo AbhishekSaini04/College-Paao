@@ -14,7 +14,9 @@ const Home = () => {
       <Navbar />
       <main className="flex-grow">
         <Hero />
+        <br />
         <Stats />
+        <br />
         <ProgramCards />
         <br />
         <Testimonials />

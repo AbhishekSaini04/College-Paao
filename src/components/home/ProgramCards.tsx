@@ -15,12 +15,12 @@ interface Program {
 const ProgramCards = () => {
   const programs: Program[] = [
     {
-      link: "https://pages.razorpay.com/pl_QhRB8FR9rS1dmi/view",
+      link: "https://rzp.io/rzp/NkabB9j",
       title: "HSTES",
       description:
         "Complete guidance through the entire college application process",
-      price: "₹1299/-",
-      extraPrice: "₹1599/-",
+      price: "₹599/-",
+      extraPrice: "₹999/-",
 
       features: [
         "Direct Call & 1-on-1 Support Sessions",
@@ -35,7 +35,7 @@ const ProgramCards = () => {
       image: "/res/imgs/programs/hstes.png",
     },
     {
-      link: "https://pages.razorpay.com/pl_QiFpO5Pa41R6vf/view",
+      link: "https://rzp.io/rzp/4k1PO7g",
       title: "JoSaa",
       description:
         "Expert guidance to craft compelling personal statements and essays",
@@ -55,7 +55,7 @@ const ProgramCards = () => {
       image: "/res/imgs/programs/josaa.png",
     },
     {
-      link: "https://pages.razorpay.com/pl_QiFzBfZkv3pMYK/view",
+      link: "https://rzp.io/rzp/a0noOny",
       title: "JAC Delhi",
       description:
         "Comprehensive preparation for college and scholarship interviews",
@@ -79,7 +79,7 @@ const ProgramCards = () => {
     <section className="py-20 bg-white" id="programs">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-black">
             Choose the Perfect Program for You
           </h2>
           <p className="text-lg text-gray-700">

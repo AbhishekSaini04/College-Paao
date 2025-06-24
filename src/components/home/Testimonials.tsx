@@ -20,7 +20,7 @@ const Testimonials = () => {
     <section className="py-20 bg-gray-50" id="testimonials">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-3xl text-primary-500 md:text-4xl font-bold mb-4">
+          <h2 className="text-3xl text-black md:text-4xl font-bold mb-4">
             What Our Students Say
           </h2>
           <p className="text-lg text-gray-700">

@@ -41,13 +41,13 @@ const Stats = () => {
   ];
 
   return (
-    <section className="py-16 bg-dark-900" ref={ref}>
+    <section className="py-16 bg-dark-900 bg-white" ref={ref}>
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-black">
             Trusted by Thousands of Students
           </h2>
-          <p className="text-lg text-gray-300">
+          <p className="text-lg text-gray-700">
             Our proven track record speaks for itself. We've helped students from all
             backgrounds achieve their college dreams.
           </p>
